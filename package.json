@@ -1,0 +1,22 @@
+{
+  "name": "project4-knighthacks",
+  "version": "1.0.0",
+  "description": "Knight Hacks Project Team 4 Discord Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MW-0317/Project4-KnightHacks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MW-0317/Project4-KnightHacks/issues"
+  },
+  "homepage": "https://github.com/MW-0317/Project4-KnightHacks#readme",
+  "dependencies": {
+    "discord.js": "^13.2.0"
+  }
+}
