@@ -1,3 +1,3 @@
 const discord = require("discord.js");
 
-console.log("Hello world !!!!");
+console.log("Hello world!")
