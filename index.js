@@ -1,3 +1,1 @@
-const discord = require("discord.js");
-
-console.log("Hello world!")
+require("./bot/index.js");
