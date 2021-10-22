@@ -6,6 +6,7 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_
                                         Intents.FLAGS.GUILD_MESSAGE_REACTIONS, Intents.FLAGS.GUILD_EMOJIS_AND_STICKERS] });
 
 const TOKEN = process.env.TOKEN;
+const PREFIX = "=p"
 
 client.once('ready', () => {
 	console.log('Ready!');
@@ -14,8 +15,8 @@ client.once('ready', () => {
 client.on("messageCreate", (message) => {
     if (message.author.bot) return;
 
-    else if (message.content.startsWith("%%")){ // Command prefix
-        const commandFull = message.content.substring(1).split(' ');
+    else if (message.content.startsWith(PREFIX)){ // Command prefix
+        const commandFull = message.content.substring(PREFIX.length).split(' ');
         const command = commandFull[0];
         const args = commandFull.splice(1);
         if (tx = textCommands[command]){
